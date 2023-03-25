@@ -1,0 +1,24 @@
+;-------------------------------------
+; simple Hello World program for CP/M
+; (c) E. Schroeer, 2023
+; to setup Visual Studio Code for Z80 assembly, see
+; https://www.youtube.com/watch?v=7c_KnXdfN_I
+;-------------------------------------
+          .Z80
+
+BDOS      EQU 0005h
+TPA       EQU 0100h
+WRITESTR  EQU 09h
+TERMCPM   EQU 00h
+
+          ASEG
+          ORG TPA
+START:
+          LD   DE,MESSAGE
+          LD   C,WRITESTR
+          CALL BDOS
+          LD   C,TERMCPM
+          CALL BDOS
+MESSAGE:  DB   "Hello, world!$"
+
+          END TPA
