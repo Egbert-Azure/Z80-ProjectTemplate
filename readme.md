@@ -28,7 +28,7 @@ You might want to debug your Z80 assembly language code with emulator. You can u
 
 ### Additional Resources
 
-* Pasmo documentation: http://pasmo.speccy.org/doc/
+* Pasmo documentation:  https://pasmo.speccy.org/pasmodoc.html
 * Z80 assembly language tutorial: https://www.tutorialspoint.com/microprocessor/microprocessor_z80_assembly.htm
 
 
